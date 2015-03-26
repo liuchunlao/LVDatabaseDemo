@@ -92,6 +92,7 @@
                                 <color key="backgroundColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="pqO-Cw-NiJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ACJ-Fa-Ozj"/>
                                 </connections>
                             </tableView>
                         </subviews>
