@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="384" y="58" width="53" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="修改数据">
+                                <state key="normal" title="修改李四">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -79,7 +79,7 @@
                                 <rect key="frame" x="323" y="58" width="53" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="删除数据">
+                                <state key="normal" title="删除张三">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,6 +87,13 @@
                                     <action selector="deleteBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMj-qg-z2L"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-FW-ifo">
+                                <rect key="frame" x="16" y="128" width="568" height="452"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pqO-Cw-NiJ"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,6 +101,7 @@
                             <constraint firstItem="qGQ-G6-jdU" firstAttribute="leading" secondItem="aS7-zc-lP9" secondAttribute="trailing" constant="8" id="4iB-3S-NCV"/>
                             <constraint firstItem="gb9-Bi-PYC" firstAttribute="centerY" secondItem="PGJ-0H-OGV" secondAttribute="centerY" id="4rb-z4-wIw"/>
                             <constraint firstItem="Rqh-XA-sWs" firstAttribute="leading" secondItem="PGJ-0H-OGV" secondAttribute="leading" id="5Hk-7x-A6C"/>
+                            <constraint firstItem="r1Q-FW-ifo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6SU-FY-NDf"/>
                             <constraint firstItem="aS7-zc-lP9" firstAttribute="centerY" secondItem="qGQ-G6-jdU" secondAttribute="centerY" id="7om-Wc-E4O"/>
                             <constraint firstItem="Rqh-XA-sWs" firstAttribute="width" secondItem="aS7-zc-lP9" secondAttribute="width" id="7u7-8Z-Kg3"/>
                             <constraint firstAttribute="centerX" secondItem="aS7-zc-lP9" secondAttribute="centerX" id="G76-mv-TjG"/>
@@ -105,7 +113,9 @@
                             <constraint firstItem="gb9-Bi-PYC" firstAttribute="height" secondItem="gwI-hX-09a" secondAttribute="height" id="OZP-kx-Wx9"/>
                             <constraint firstItem="Rqh-XA-sWs" firstAttribute="width" secondItem="qGQ-G6-jdU" secondAttribute="width" id="Od8-Ga-kiT"/>
                             <constraint firstItem="gb9-Bi-PYC" firstAttribute="height" secondItem="PGJ-0H-OGV" secondAttribute="height" id="VqP-pC-73C"/>
+                            <constraint firstAttribute="centerX" secondItem="r1Q-FW-ifo" secondAttribute="centerX" id="XTz-lE-p7o"/>
                             <constraint firstItem="gb9-Bi-PYC" firstAttribute="width" secondItem="PGJ-0H-OGV" secondAttribute="width" id="Yd6-5d-n9W"/>
+                            <constraint firstItem="r1Q-FW-ifo" firstAttribute="top" secondItem="gwI-hX-09a" secondAttribute="bottom" constant="40" id="b33-Jp-edf"/>
                             <constraint firstItem="aS7-zc-lP9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="bcF-ZV-pq0"/>
                             <constraint firstItem="gb9-Bi-PYC" firstAttribute="top" secondItem="aS7-zc-lP9" secondAttribute="bottom" constant="8" id="el7-IB-Xaq"/>
                             <constraint firstItem="gwI-hX-09a" firstAttribute="centerY" secondItem="y8x-YK-2n5" secondAttribute="centerY" id="ep5-yj-3M9"/>
@@ -113,7 +123,9 @@
                             <constraint firstItem="aS7-zc-lP9" firstAttribute="leading" secondItem="Rqh-XA-sWs" secondAttribute="trailing" constant="8" id="gZI-Eh-CMS"/>
                             <constraint firstItem="aS7-zc-lP9" firstAttribute="baseline" secondItem="Rqh-XA-sWs" secondAttribute="baseline" id="hWI-L6-FOe"/>
                             <constraint firstItem="gwI-hX-09a" firstAttribute="bottom" secondItem="y8x-YK-2n5" secondAttribute="bottom" id="iUf-ng-clp"/>
+                            <constraint firstItem="r1Q-FW-ifo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jE5-GZ-jkU"/>
                             <constraint firstItem="y8x-YK-2n5" firstAttribute="top" secondItem="qGQ-G6-jdU" secondAttribute="bottom" constant="8" id="jJu-IU-QGh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r1Q-FW-ifo" secondAttribute="bottom" constant="20" id="jeI-6n-BC6"/>
                             <constraint firstItem="aS7-zc-lP9" firstAttribute="top" secondItem="qGQ-G6-jdU" secondAttribute="top" id="lLd-07-KMC"/>
                             <constraint firstItem="Rqh-XA-sWs" firstAttribute="bottom" secondItem="PGJ-0H-OGV" secondAttribute="bottom" constant="-38" id="mfz-Gi-SFR"/>
                             <constraint firstItem="qGQ-G6-jdU" firstAttribute="trailing" secondItem="y8x-YK-2n5" secondAttribute="trailing" id="qOs-0B-kaF"/>
@@ -130,6 +142,7 @@
                         <outlet property="insertBtn" destination="PGJ-0H-OGV" id="TGp-nP-gHI"/>
                         <outlet property="nameField" destination="Rqh-XA-sWs" id="H9e-cl-cgR"/>
                         <outlet property="queryBtn" destination="gb9-Bi-PYC" id="50o-jr-cyg"/>
+                        <outlet property="tableView" destination="r1Q-FW-ifo" id="FKN-26-keA"/>
                         <outlet property="updateBtn" destination="y8x-YK-2n5" id="eMu-A5-6Lq"/>
                     </connections>
                 </viewController>
