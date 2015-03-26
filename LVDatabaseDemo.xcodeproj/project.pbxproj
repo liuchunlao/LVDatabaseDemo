@@ -14,6 +14,11 @@
 		129CB01F1AC3EFE800D87EA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129CB01E1AC3EFE800D87EA3 /* Images.xcassets */; };
 		129CB0221AC3EFE800D87EA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129CB0201AC3EFE800D87EA3 /* LaunchScreen.xib */; };
 		129CB02E1AC3EFE800D87EA3 /* LVDatabaseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 129CB02D1AC3EFE800D87EA3 /* LVDatabaseDemoTests.m */; };
+		12C068DE1AC3F68400444FB0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068D41AC3F68400444FB0 /* FMDatabase.m */; };
+		12C068DF1AC3F68400444FB0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068D61AC3F68400444FB0 /* FMDatabaseAdditions.m */; };
+		12C068E01AC3F68400444FB0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068D81AC3F68400444FB0 /* FMDatabasePool.m */; };
+		12C068E11AC3F68400444FB0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068DA1AC3F68400444FB0 /* FMDatabaseQueue.m */; };
+		12C068E21AC3F68400444FB0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068DD1AC3F68400444FB0 /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		129CB0271AC3EFE800D87EA3 /* LVDatabaseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LVDatabaseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		129CB02C1AC3EFE800D87EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		129CB02D1AC3EFE800D87EA3 /* LVDatabaseDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVDatabaseDemoTests.m; sourceTree = "<group>"; };
+		12C068D31AC3F68400444FB0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		12C068D41AC3F68400444FB0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		12C068D51AC3F68400444FB0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		12C068D61AC3F68400444FB0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		12C068D71AC3F68400444FB0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		12C068D81AC3F68400444FB0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		12C068D91AC3F68400444FB0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		12C068DA1AC3F68400444FB0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		12C068DB1AC3F68400444FB0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		12C068DC1AC3F68400444FB0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		12C068DD1AC3F68400444FB0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		129CB0101AC3EFE800D87EA3 /* LVDatabaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				12C068D21AC3F68400444FB0 /* fmdb */,
 				129CB0151AC3EFE800D87EA3 /* AppDelegate.h */,
 				129CB0161AC3EFE800D87EA3 /* AppDelegate.m */,
 				129CB0181AC3EFE800D87EA3 /* ViewController.h */,
@@ -117,6 +134,24 @@
 				129CB02C1AC3EFE800D87EA3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12C068D21AC3F68400444FB0 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				12C068D31AC3F68400444FB0 /* FMDatabase.h */,
+				12C068D41AC3F68400444FB0 /* FMDatabase.m */,
+				12C068D51AC3F68400444FB0 /* FMDatabaseAdditions.h */,
+				12C068D61AC3F68400444FB0 /* FMDatabaseAdditions.m */,
+				12C068D71AC3F68400444FB0 /* FMDatabasePool.h */,
+				12C068D81AC3F68400444FB0 /* FMDatabasePool.m */,
+				12C068D91AC3F68400444FB0 /* FMDatabaseQueue.h */,
+				12C068DA1AC3F68400444FB0 /* FMDatabaseQueue.m */,
+				12C068DB1AC3F68400444FB0 /* FMDB.h */,
+				12C068DC1AC3F68400444FB0 /* FMResultSet.h */,
+				12C068DD1AC3F68400444FB0 /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +255,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				129CB01A1AC3EFE800D87EA3 /* ViewController.m in Sources */,
+				12C068E01AC3F68400444FB0 /* FMDatabasePool.m in Sources */,
 				129CB0171AC3EFE800D87EA3 /* AppDelegate.m in Sources */,
+				12C068E11AC3F68400444FB0 /* FMDatabaseQueue.m in Sources */,
 				129CB0141AC3EFE800D87EA3 /* main.m in Sources */,
+				12C068DE1AC3F68400444FB0 /* FMDatabase.m in Sources */,
+				12C068E21AC3F68400444FB0 /* FMResultSet.m in Sources */,
+				12C068DF1AC3F68400444FB0 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +454,7 @@
 				129CB0331AC3EFE800D87EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		129CB0341AC3EFE800D87EA3 /* Build configuration list for PBXNativeTarget "LVDatabaseDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +463,7 @@
 				129CB0361AC3EFE800D87EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
