@@ -43,6 +43,9 @@
                                 <state key="normal" title="插入数据">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="insertBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEa-yf-G6Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-Bi-PYC">
                                 <rect key="frame" x="224" y="58" width="53" height="30"/>
@@ -56,6 +59,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="queryBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2l-9a-igE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8x-YK-2n5">
                                 <rect key="frame" x="384" y="58" width="53" height="30"/>
@@ -65,6 +71,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="updateBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPM-3R-KLw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-hX-09a">
                                 <rect key="frame" x="323" y="58" width="53" height="30"/>
@@ -74,6 +83,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMj-qg-z2L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -111,6 +123,15 @@
                             <constraint firstItem="gb9-Bi-PYC" firstAttribute="width" secondItem="gwI-hX-09a" secondAttribute="width" id="zls-NS-ZvR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageField" destination="aS7-zc-lP9" id="c5K-34-NfS"/>
+                        <outlet property="deleteBtn" destination="gwI-hX-09a" id="Tpq-0G-iEu"/>
+                        <outlet property="idField" destination="qGQ-G6-jdU" id="fkQ-su-cqX"/>
+                        <outlet property="insertBtn" destination="PGJ-0H-OGV" id="TGp-nP-gHI"/>
+                        <outlet property="nameField" destination="Rqh-XA-sWs" id="H9e-cl-cgR"/>
+                        <outlet property="queryBtn" destination="gb9-Bi-PYC" id="50o-jr-cyg"/>
+                        <outlet property="updateBtn" destination="y8x-YK-2n5" id="eMu-A5-6Lq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
