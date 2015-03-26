@@ -19,6 +19,7 @@
 		12C068E01AC3F68400444FB0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068D81AC3F68400444FB0 /* FMDatabasePool.m */; };
 		12C068E11AC3F68400444FB0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068DA1AC3F68400444FB0 /* FMDatabaseQueue.m */; };
 		12C068E21AC3F68400444FB0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C068DD1AC3F68400444FB0 /* FMResultSet.m */; };
+		12C068E41AC3F81600444FB0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C068E31AC3F81600444FB0 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		12C068DB1AC3F68400444FB0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		12C068DC1AC3F68400444FB0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		12C068DD1AC3F68400444FB0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		12C068E31AC3F81600444FB0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C068E41AC3F81600444FB0 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		129CB0051AC3EFE800D87EA3 = {
 			isa = PBXGroup;
 			children = (
+				12C068E31AC3F81600444FB0 /* libsqlite3.0.dylib */,
 				129CB0101AC3EFE800D87EA3 /* LVDatabaseDemo */,
 				129CB02A1AC3EFE800D87EA3 /* LVDatabaseDemoTests */,
 				129CB00F1AC3EFE800D87EA3 /* Products */,
