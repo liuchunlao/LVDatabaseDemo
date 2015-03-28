@@ -16,7 +16,7 @@
 #define LVSQLITE_NAME @"modals.sqlite"
 
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 /** 姓名 */
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
@@ -72,7 +72,27 @@
     
     // 调整按钮风格
     [self setupControl:@[self.insertBtn, self.queryBtn, self.deleteBtn, self.updateBtn]];
+    
+    // 模糊查询
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 44)];
+    searchBar.delegate = self;
+    self.tableView.tableHeaderView = searchBar;
 }
+
+#pragma mark - 模糊查询功能演示
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+
+    [self.modalsArrM removeAllObjects];
+    
+    NSString *fuzzyQuerySql = [NSString stringWithFormat:@"SELECT * FROM t_modals WHERE name LIKE '%%%@%%' OR ID_No LIKE '%%%@%%'", searchText, searchText];
+    NSArray *modals = [LVFmdbTool queryData:fuzzyQuerySql];
+    
+    [self.modalsArrM addObjectsFromArray:modals];
+    
+    [self.tableView reloadData];
+}
+
+
 
 - (void)setupControl:(NSArray *)array {
     
