@@ -30,3 +30,6 @@ FMDB数据库的使用演示和封装工具类，希望能帮助到用到的朋�
 
 ## 效果图
 ![](https://github.com/liuchunlao/ImageCache/raw/master/gifResource/LVDatabaseDemo.gif)
+
+## 期待
+* 如果在使用过程中遇到BUG，希望你能Issues我，谢谢！
