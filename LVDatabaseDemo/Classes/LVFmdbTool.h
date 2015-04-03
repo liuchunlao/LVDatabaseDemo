@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FMDB.h"
+
 @class LVModal;
 @interface LVFmdbTool : NSObject
 

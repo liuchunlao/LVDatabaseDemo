@@ -7,7 +7,6 @@
 //
 
 #import "LVFmdbTool.h"
-#import "FMDB.h"
 #import "LVModal.h"
 
 #define LVSQLITE_NAME @"modals.sqlite"
