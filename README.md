@@ -2,14 +2,14 @@
 FMDB数据库的使用演示和封装工具类，希望能帮助到用到的朋友，谢谢！
 ##使用步骤。。。
 
-将FMDB框架及LVFmdbTool拉入项目中，导入头文件,根据需要修改表名《在LVFmdbTool.m》文件中查找modals，替换为需要的表明。
+将FMDB框架及LVFmdbTool拉入项目中，导入头文件,根据需要修改表名《在LVFmdbTool.m》文件中查找models，替换为需要的表明。
 ```
     #improt "LVFmdbTool.h"
 ```
 
 ## 插入数据
 ```
-    [LVFmdbTool insertModal:modal]
+    [LVFmdbTool insertModel:model]
 ```
 
 ## 查询数据

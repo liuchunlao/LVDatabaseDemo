@@ -6,16 +6,16 @@
 //  Copyright (c) 2015年 liuchunlao. All rights reserved.
 //
 
-#import "LVModal.h"
+#import "LVModel.h"
 
-@implementation LVModal
+@implementation LVModel
 
 + (instancetype)modalWith:(NSString *)name age:(NSInteger)age no:(NSInteger)ID_No {
-    LVModal *modal = [[LVModal alloc] init];
-    modal.name = name;
-    modal.age = age;
-    modal.ID_No = ID_No;
-    return modal;
+    LVModel *model = [[self alloc] init];
+    model.name = name;
+    model.age = age;
+    model.ID_No = ID_No;
+    return model;
 }
 
 @end

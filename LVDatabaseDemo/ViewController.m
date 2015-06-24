@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LVModal.h"
+#import "LVModel.h"
 
 #import "LVFmdbTool.h"
 
@@ -105,13 +105,13 @@
     
     if (self.nameField.text.length == 0 || self.ageField.text.length == 0 || self.idField.text.length == 0)     return;
     
-    LVModal *modal = [LVModal modalWith:self.nameField.text age:self.ageField.text.intValue no:self.idField.text.intValue];
+    LVModel *model = [LVModel modalWith:self.nameField.text age:self.ageField.text.intValue no:self.idField.text.intValue];
     
-    BOOL isInsert = [LVFmdbTool insertModal:modal];
+    BOOL isInsert = [LVFmdbTool insertModel:model];
     
     if (isInsert) {
         
-        [self.modalsArrM addObject:modal];
+        [self.modalsArrM addObject:model];
         [self.tableView reloadData];
         
     } else {
@@ -160,9 +160,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
     
-    LVModal *modal = self.modalsArrM[indexPath.row];
-    cell.textLabel.text = modal.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%zd", modal.ID_No];
+    LVModel *model = self.modalsArrM[indexPath.row];
+    cell.textLabel.text = model.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%zd", model.ID_No];
     return cell;
 }
 

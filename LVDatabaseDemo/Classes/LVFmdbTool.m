@@ -7,7 +7,7 @@
 //
 
 #import "LVFmdbTool.h"
-#import "LVModal.h"
+#import "LVModel.h"
 
 #define LVSQLITE_NAME @"modals.sqlite"
 
@@ -27,8 +27,8 @@ static FMDatabase *_fmdb;
     [_fmdb executeUpdate:@"CREATE TABLE IF NOT EXISTS t_modals(id INTEGER PRIMARY KEY, name TEXT NOT NULL, age INTEGER NOT NULL, ID_No INTEGER NOT NULL);"];
 }
 
-+ (BOOL)insertModal:(LVModal *)modal {
-    NSString *insertSql = [NSString stringWithFormat:@"INSERT INTO t_modals(name, age, ID_No) VALUES ('%@', '%zd', '%zd');", modal.name, modal.age, modal.ID_No];
++ (BOOL)insertModel:(LVModel *)model {
+    NSString *insertSql = [NSString stringWithFormat:@"INSERT INTO t_modals(name, age, ID_No) VALUES ('%@', '%zd', '%zd');", model.name, model.age, model.ID_No];
     return [_fmdb executeUpdate:insertSql];
 }
 
@@ -47,7 +47,7 @@ static FMDatabase *_fmdb;
         NSString *age = [set stringForColumn:@"age"];
         NSString *ID_No = [set stringForColumn:@"ID_No"];
         
-        LVModal *modal = [LVModal modalWith:name age:age.intValue no:ID_No.intValue];
+        LVModel *modal = [LVModel modalWith:name age:age.intValue no:ID_No.intValue];
         [arrM addObject:modal];
     }
     return arrM;

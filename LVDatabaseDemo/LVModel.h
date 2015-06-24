@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LVModal : NSObject
+@interface LVModel : NSObject
 
 @property (nonatomic, copy) NSString *name;
 

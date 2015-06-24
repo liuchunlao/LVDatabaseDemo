@@ -15,7 +15,7 @@
 		129CB0221AC3EFE800D87EA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129CB0201AC3EFE800D87EA3 /* LaunchScreen.xib */; };
 		129CB02E1AC3EFE800D87EA3 /* LVDatabaseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 129CB02D1AC3EFE800D87EA3 /* LVDatabaseDemoTests.m */; };
 		12C068E41AC3F81600444FB0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C068E31AC3F81600444FB0 /* libsqlite3.0.dylib */; };
-		D905096F1AC4474200F33E25 /* LVModal.m in Sources */ = {isa = PBXBuildFile; fileRef = D905096E1AC4474200F33E25 /* LVModal.m */; };
+		D905096F1AC4474200F33E25 /* LVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D905096E1AC4474200F33E25 /* LVModel.m */; };
 		D905097D1AC44E4700F33E25 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D90509731AC44E4700F33E25 /* FMDatabase.m */; };
 		D905097E1AC44E4700F33E25 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D90509751AC44E4700F33E25 /* FMDatabaseAdditions.m */; };
 		D905097F1AC44E4700F33E25 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D90509771AC44E4700F33E25 /* FMDatabasePool.m */; };
@@ -49,8 +49,8 @@
 		129CB02C1AC3EFE800D87EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		129CB02D1AC3EFE800D87EA3 /* LVDatabaseDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVDatabaseDemoTests.m; sourceTree = "<group>"; };
 		12C068E31AC3F81600444FB0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		D905096D1AC4474200F33E25 /* LVModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModal.h; sourceTree = "<group>"; };
-		D905096E1AC4474200F33E25 /* LVModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModal.m; sourceTree = "<group>"; };
+		D905096D1AC4474200F33E25 /* LVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModel.h; sourceTree = "<group>"; };
+		D905096E1AC4474200F33E25 /* LVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModel.m; sourceTree = "<group>"; };
 		D90509721AC44E4700F33E25 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		D90509731AC44E4700F33E25 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		D90509741AC44E4700F33E25 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -108,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				D90509701AC44E4700F33E25 /* Classes */,
+				D905096D1AC4474200F33E25 /* LVModel.h */,
+				D905096E1AC4474200F33E25 /* LVModel.m */,
 				129CB0151AC3EFE800D87EA3 /* AppDelegate.h */,
 				129CB0161AC3EFE800D87EA3 /* AppDelegate.m */,
 				129CB0181AC3EFE800D87EA3 /* ViewController.h */,
@@ -116,8 +118,6 @@
 				129CB01E1AC3EFE800D87EA3 /* Images.xcassets */,
 				129CB0201AC3EFE800D87EA3 /* LaunchScreen.xib */,
 				129CB0111AC3EFE800D87EA3 /* Supporting Files */,
-				D905096D1AC4474200F33E25 /* LVModal.h */,
-				D905096E1AC4474200F33E25 /* LVModal.m */,
 			);
 			path = LVDatabaseDemo;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D905096F1AC4474200F33E25 /* LVModal.m in Sources */,
+				D905096F1AC4474200F33E25 /* LVModel.m in Sources */,
 				D905097F1AC44E4700F33E25 /* FMDatabasePool.m in Sources */,
 				D90509811AC44E4700F33E25 /* FMResultSet.m in Sources */,
 				129CB01A1AC3EFE800D87EA3 /* ViewController.m in Sources */,

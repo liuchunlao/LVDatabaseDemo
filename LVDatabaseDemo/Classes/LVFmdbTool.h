@@ -13,7 +13,7 @@
 @interface LVFmdbTool : NSObject
 
 // 插入模型数据
-+ (BOOL)insertModal:(LVModal *)modal;
++ (BOOL)insertModel:(LVModal *)model;
 
 /** 查询数据,如果 传空 默认会查询表中所有数据 */
 + (NSArray *)queryData:(NSString *)querySql;
